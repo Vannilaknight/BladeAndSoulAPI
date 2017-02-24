@@ -26,7 +26,7 @@ function getEnv(name) {
   return process.env[key];
 }
 
-setEnv('port', 3030);
+setEnv('port', 80);
 setEnv('bnstree_api', 'http://localhost:3031');
 
 let config = {
