@@ -1,0 +1,209 @@
+//colors
+$color_japanese_laurel_approx: #060;
+$color_arapawa_approx: #006;
+$color_lonestar_approx: #600;
+$color_loulou_approx: #404;
+$color_aqua_deep_approx: #044;
+$color_bronze_olive_approx: #440;
+$black: #000;
+$string: #65b042;
+$keyword: #e28964;
+$comment: #aeaeae;
+$type: #89bdff;
+$literal: #3387cc;
+$white: #fff;
+$attribute: #bdb76b;
+
+pre {
+  .str {
+    color: $string;
+  }
+  .kwd {
+    color: $keyword;
+  }
+  .com {
+    color: $comment;
+    font-style: italic;
+  }
+  .typ {
+    color: $type;
+  }
+  .lit {
+    color: $literal;
+  }
+  .pun {
+    color: $white;
+  }
+  .pln {
+    color: $white;
+  }
+  .tag {
+    color: $type;
+  }
+  .atn {
+    color: $attribute;
+  }
+  .atv {
+    color: $string;
+  }
+  .dec {
+    color: $literal;
+  }
+  &.prettyprint {
+    background-color: $black;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 8px;
+    width: 95%;
+    margin: 1em auto;
+    padding: 1em;
+    white-space: pre-wrap;
+  }
+}
+code {
+  .str {
+    color: $string;
+  }
+  .kwd {
+    color: $keyword;
+  }
+  .com {
+    color: $comment;
+    font-style: italic;
+  }
+  .typ {
+    color: $type;
+  }
+  .lit {
+    color: $literal;
+  }
+  .pun {
+    color: $white;
+  }
+  .pln {
+    color: $white;
+  }
+  .tag {
+    color: $type;
+  }
+  .atn {
+    color: $attribute;
+  }
+  .atv {
+    color: $string;
+  }
+  .dec {
+    color: $literal;
+  }
+  &.prettyprint {
+    background-color: $black;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 8px;
+  }
+}
+li {
+  &.L0 {
+    list-style-type: none;
+  }
+  &.L1 {
+    list-style-type: none;
+  }
+  &.L2 {
+    list-style-type: none;
+  }
+  &.L3 {
+    list-style-type: none;
+  }
+  &.L5 {
+    list-style-type: none;
+  }
+  &.L6 {
+    list-style-type: none;
+  }
+  &.L7 {
+    list-style-type: none;
+  }
+  &.L8 {
+    list-style-type: none;
+  }
+  &.L9 {
+  }
+}
+@media print {
+  pre {
+    .str {
+      color: $color_japanese_laurel_approx;
+    }
+    .kwd {
+      color: $color_arapawa_approx;
+      font-weight: bold;
+    }
+    .com {
+      color: $color_lonestar_approx;
+      font-style: italic;
+    }
+    .typ {
+      color: $color_loulou_approx;
+      font-weight: bold;
+    }
+    .lit {
+      color: $color_aqua_deep_approx;
+    }
+    .pun {
+      color: $color_bronze_olive_approx;
+    }
+    .pln {
+      color: $black;
+    }
+    .tag {
+      color: $color_arapawa_approx;
+      font-weight: bold;
+    }
+    .atn {
+      color: $color_loulou_approx;
+    }
+    .atv {
+      color: $color_japanese_laurel_approx;
+    }
+  }
+  code {
+    .str {
+      color: $color_japanese_laurel_approx;
+    }
+    .kwd {
+      color: $color_arapawa_approx;
+      font-weight: bold;
+    }
+    .com {
+      color: $color_lonestar_approx;
+      font-style: italic;
+    }
+    .typ {
+      color: $color_loulou_approx;
+      font-weight: bold;
+    }
+    .lit {
+      color: $color_aqua_deep_approx;
+    }
+    .pun {
+      color: $color_bronze_olive_approx;
+    }
+    .pln {
+      color: $black;
+    }
+    .tag {
+      color: $color_arapawa_approx;
+      font-weight: bold;
+    }
+    .atn {
+      color: $color_loulou_approx;
+    }
+    .atv {
+      color: $color_japanese_laurel_approx;
+    }
+  }
+}
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $comment;
+}

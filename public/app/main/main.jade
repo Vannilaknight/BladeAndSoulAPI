@@ -1,0 +1,24 @@
+.container-fluid
+    h1 BNS Character API
+    .col-xs-12.endpoints
+        .endpoint
+            .col-xs-4.endpoint-url
+                .type
+                    span.text-success GET
+                span /api/character/:characterName
+            .col-xs-8.endpoint-detail
+                p Returns JSON object with basic character data.
+                pre.prettyprint.lang-js
+                    | {
+                    |   username: &quot;username&quot;,
+                    |   name: &quot;character name&quot;,
+                    |   class: &quot;Blade Master&quot;,
+                    |   level: 50,
+                    |   hongmoonLevel: 2,
+                    |   server: &quot;Mushin&quot;,
+                    |   faction: &quot;Cerulean Order&nbsp;Recruit&quot;,
+                    |   guild: &quot;&quot;
+                    | }
+                span.text-info NOTE:
+                span  Character Name parameter is Case Sensitive
+

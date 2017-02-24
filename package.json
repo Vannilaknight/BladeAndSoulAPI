@@ -1,0 +1,24 @@
+{
+  "name": "bnscharapi",
+  "version": "0.1.0",
+  "description": "Blade and Soul Character Data API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo write tests please",
+    "start": "node index"
+  },
+  "author": "Taylor Boyd",
+  "license": "ISC",
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.2.0",
+    "express-session": "^1.14.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0",
+    "node-sass": "^3.8.0",
+    "node-sass-middleware": "^0.9.8",
+    "request": "^2.74.0"
+  }
+}

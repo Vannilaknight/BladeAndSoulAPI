@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Press+Start+2P|Reem+Kufi|Kalam';
+#fullBg {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px; }
+
+.form-signin {
+  max-width: 500px;
+  margin: 60px auto 10px; }
+  .form-signin label {
+    font-weight: lighter;
+    font-family: "Poiret One";
+    font-size: 24px; }
+  .form-signin .form-signin-heading {
+    position: absolute;
+    margin-left: 80px;
+    color: #456F74;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -90px;
+    margin-bottom: 35px;
+    font-family: "Lobster";
+    font-size: 72px;
+    text-shadow: -2px -2px 0 #D3CBBD, 2px -2px 0 #D3CBBD, -2px 2px 0 #D3CBBD, 2px 2px 0 #D3CBBD; }
+    .form-signin .form-signin-heading small {
+      font-size: 36px;
+      color: #574c3a;
+      position: relative;
+      top: 40px;
+      left: -90px; }
+  .form-signin .checkbox {
+    font-weight: normal; }
+  .form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #403d3c;
+    margin-bottom: -1px;
+    border: 1px solid #D3CBBD;
+    box-shadow: none;
+    color: #D3CBBD; }
+    .form-signin .form-control:focus {
+      border: 1px solid #EB5937; }
+  .form-signin .btn {
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #D3CBBD;
+    padding: 5px 15px; }
+  .form-signin p.sign-up {
+    font-family: "Poiret One";
+    font-size: 16px;
+    color: #D3CBBD; }
+  .form-signin a {
+    color: #EB5937; }
+    .form-signin a:hover {
+      color: #d93b16;
+      cursor: pointer; }
+
+.closit-login {
+  background: rgba(64, 61, 60, 0.86);
+  padding: 50px; }

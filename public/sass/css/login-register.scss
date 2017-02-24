@@ -1,0 +1,94 @@
+@import "bourbon/bourbon";
+@import "colorScheme";
+
+#fullBg {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.form-signin {
+  max-width: 500px;
+  margin: 60px auto 10px;
+
+  label {
+    font-weight: lighter;
+    font-family: $poiretFont;
+    font-size: 24px;
+  }
+
+  .form-signin-heading {
+    position: absolute;
+    margin-left: 80px;
+    color: $primary;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -90px;
+    margin-bottom: 35px;
+    font-family: $lobsterFont;
+    font-size: 72px;
+
+    text-shadow: -2px -2px 0 $light,
+    2px -2px 0 $light,
+    -2px 2px 0 $light,
+    2px 2px 0 $light;
+
+    small {
+      font-size: 36px;
+      color: $light-dark;
+      position: relative;
+      top: 40px;
+      left: -90px;
+    }
+  }
+
+  .checkbox {
+    font-weight: normal;
+  }
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 5px;
+    @include box-sizing(border-box);
+    background-color: $gray;
+    margin-bottom: -1px;
+    border: 1px solid $light;
+    box-shadow: none;
+    color: $light;
+
+    &:focus {
+      border: 1px solid $secondary;
+    }
+  }
+
+  .btn {
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid $light;
+    padding: 5px 15px;
+  }
+
+  p.sign-up {
+    font-family: $poiretFont;
+    font-size: 16px;
+    color: $light;
+  }
+
+  a {
+    color: $secondary;
+
+    &:hover{
+      color: $secondary-dim;
+      cursor: pointer;
+    }
+  }
+}
+
+.closit-login {
+  background: rgba(64, 61, 60, 0.86);
+  padding: 50px;
+}
