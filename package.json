@@ -12,6 +12,7 @@
   "dependencies": {
     "assert-plus": "^1.0.0",
     "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.2.0",
     "express-session": "^1.14.0",
@@ -19,6 +20,6 @@
     "morgan": "^1.7.0",
     "node-sass": "^3.8.0",
     "node-sass-middleware": "^0.9.8",
-    "request": "^2.74.0"
+    "request": "^2.79.0"
   }
 }
