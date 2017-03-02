@@ -14,7 +14,6 @@ module.exports = function (req, res) {
       var charServer = $(".desc ul li:nth-child(3)").text();
       var charFaction = $(".desc ul li:nth-child(4)").text();
       var charGuild = $(".guild").text();
-      var charViewURL = $(".characterView img").src;
 
       //attack stats
       var attackTotal = $(".attack .stat-define dt:nth-child(1) .stat-point").text();
@@ -58,7 +57,6 @@ module.exports = function (req, res) {
         server: charServer,
         faction: charFaction,
         guild: charGuild,
-        characterViewURL: charViewURL,
         stats: {
           attack: {
             masteryLvl: parseInt(masteryLvl.split(" ")[1]) || 0,
