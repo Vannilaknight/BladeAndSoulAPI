@@ -2,11 +2,11 @@
     h1 BNS Character API
     .col-xs-12.endpoints
         .endpoint
-            .col-xs-4.endpoint-url
+            .col-xs-12.col-sm-4.endpoint-url
                 .type
                     span.text-success GET
                 span /api/character/:characterName
-            .col-xs-8.endpoint-detail
+            .col-xs-12.col-sm-8.endpoint-detail
                 p Returns JSON object with basic character data.
                 input.form-control.input-sm(type="text", placeholder="Search Character Name", ng-model="characterName", ng-change="search()")
                 json-formatter.result(json="searchResults", open="1")
