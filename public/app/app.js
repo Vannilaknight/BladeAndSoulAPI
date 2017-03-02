@@ -1,4 +1,4 @@
-angular.module('app', ['ngResource', 'ngRoute', 'ngAnimate']);
+angular.module('app', ['ngResource', 'ngRoute', 'ngAnimate', 'jsonFormatter']);
 
 angular.module('app').config(function ($routeProvider, $locationProvider) {
 

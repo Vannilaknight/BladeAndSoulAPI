@@ -1,5 +1,5 @@
 angular.module('app').controller('mainCtrl', function ($scope, $http, $rootScope, $interval, $location) {
-  $scope.basicDataExample = JSON.stringify({
+  $scope.searchResults = {
     "username": "username",
     "name": "character name",
     "class": "Blade Master",
@@ -8,5 +8,11 @@ angular.module('app').controller('mainCtrl', function ($scope, $http, $rootScope
     "server": "Mushin",
     "faction": "Cerulean Order Recruit",
     "guild": ""
-  });
+  };
+
+  $scope.search = function () {
+    $http.get("/api/character/" + $scope.characterName).then(function (results) {
+      $scope.searchResults = results.data;
+    });
+  }
 });
