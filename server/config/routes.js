@@ -7,7 +7,7 @@ module.exports = function (app, config) {
     res.render('../../public/app/' + req.params[0]);
   });
 
-  app.get('/api/character/:characterName', bnsCC);
+  app.get('/api/character/:region/:characterName', bnsCC);
 
   app.all('/api/*', function (req, res) {
     res.send(404);

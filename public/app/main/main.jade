@@ -5,11 +5,26 @@
             .col-xs-12.col-sm-4.endpoint-url
                 .type
                     span.text-success GET
-                span /api/character/:characterName
+                span /api/character/:region/:characterName
+                p.well.well-sm i.e. http://www.bnsapi.com/api/character/na/Vannilaknight
             .col-xs-12.col-sm-8.endpoint-detail
                 p Returns JSON object with basic character data.
-                input.form-control.input-sm(type="text", placeholder="Search Character Name", ng-model="characterName", ng-change="search()")
+                .input-group
+                    .input-group-btn
+                        button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | {{region}}
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='#', ng-click="region = 'NA'; search()") NA
+                            li
+                                a(href='#', ng-click="region = 'EU'; search()") EU
+                    input.form-control(type="text", placeholder="Search Character Name", ng-model="characterName", ng-change="search()")
                 json-formatter.result(json="searchResults", open="1")
+                span.text-success Regions:
+                ul
+                    li.text-default na
+                    li.text-default eu
                 span.text-info NOTE:
                 span  Character Name parameter is Case Sensitive
 

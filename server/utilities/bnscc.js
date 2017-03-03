@@ -2,7 +2,7 @@ var request = require("request"),
   cheerio = require("cheerio");
 
 module.exports = function (req, res) {
-  request('http://na-bns.ncsoft.com/ingame/bs/character/profile?c=' + req.params.characterName, function (error, response, html) {
+  request('http://' + req.params.region + '-bns.ncsoft.com/ingame/bs/character/profile?c=' + req.params.characterName, function (error, response, html) {
     if (!error && response.statusCode == 200) {
       var $ = cheerio.load(html);
       var username = $(".signature dt a").text();
