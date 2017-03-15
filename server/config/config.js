@@ -27,13 +27,11 @@ function getEnv(name) {
 }
 
 setEnv('port', 80);
-setEnv('bnstree_api', 'http://localhost:3031');
 
 let config = {
   self: {
     port: getEnv('port'),
-    rootPath: rootPath,
-    closit_api: getEnv('bnstree_api')
+    rootPath: rootPath
   }
 };
 
